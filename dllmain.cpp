@@ -87,8 +87,6 @@ DWORD WINAPI MyThread(LPVOID lpParam) {
     surface = reinterpret_cast<ISurface*>(vgui2_interface("VGUI_Surface030", nullptr));
     assert(surface);
 
-    IClientEntity* cock = entity_list->GetClientEntity(engine->GetLocalPlayer());
-
     // Get ClientModeShared from CHLClient
     ClientModeShared* client_mode_shared = GetClientModeShared(client);
     assert(client_mode_shared);
